@@ -17,9 +17,7 @@ import idu.cs.repository.UserRepository;
 public class HomeController {
 	@Autowired UserRepository userRepo; // Dependency Injection
 	@GetMapping("/")
-	public String home(Model model) {
-		model.addAttribute("test", "인덕 컴소");
-		model.addAttribute("egy", "유응구");
+	public String home(Model model) { 
 		return "index";
 	}
 	@GetMapping("/register")
